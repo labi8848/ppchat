@@ -1,16 +1,29 @@
 {
-  "name": "@your-username/my-private-package",
+  "name": "ppchat-installer",
   "version": "1.0.0",
-  "description": "我的私有 npm 包示例",
+  "description": "PPChat Codex 一键安装配置工具",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "ppchat-setup": "./index.js"
   },
-  "keywords": ["private", "utils"],
-  "author": "Your Name",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "ppchat",
+    "installer",
+    "setup"
+  ],
+  "author": "PPChat",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/my-private-package.git"
+    "url": "git+https://github.com/your-username/ppchat.git"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "@your-username/my-private-package": "github:labi8848/ppchat"
   }
 }
